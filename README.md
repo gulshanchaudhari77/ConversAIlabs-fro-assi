@@ -1,12 +1,52 @@
-# React + Vite
+ Custom Note App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and fast note-taking app built with **React**, **Vite**, and **Tailwind CSS**. Notes are saved in the browser using **localStorage**—no backend required!
 
-Currently, two official plugins are available:
+#Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Live Demo](https://convers-a-ilabs-fro-assi-a1me.vercel.app/)
 
-## Expanding the ESLint configuration
+#Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React (with Vite)
+- 💨 Tailwind CSS
+- 🗂 localStorage
+- 🔁 React useState/useEffect for state management
+
+
+
+#Features
+
+-  Add a new note (title + content)
+-  View all saved notes
+-  Notes persist using `localStorage`
+-  Simple 2-tab navigation
+-  Error handling + loading states
+
+
+#Why Decisions
+
+#Storage Strategy
+-localStorage was chosen for simplicity and persistence without a backend.
+- `note_app_notes` is used as a key for easier debugging and avoiding key collision.
+
+#Component Design
+- `AddNote`, `NotesList`, and `Navbar` are modular for separation of concerns and clarity.
+
+#State Management
+- `useState` is used to manage controlled inputs and display states.
+- `useEffect` is used in `NotesList` to load notes from storage once on mount.
+
+#Styling
+- **Tailwind CSS** used for fast development, clean utility-first design, and responsiveness.
+
+#Navigation
+- Simple tab switching using `useState` avoids React Router complexity.
+
+#Getting Started
+
+#Install & Run
+bash
+npm install
+npm run dev
+
