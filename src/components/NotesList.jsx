@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getNotes } from '../utils/Storage';
+import { getNotes } from '../utils/storage';
 
 function NotesList() {
   const [notes, setNotes] = useState([]);

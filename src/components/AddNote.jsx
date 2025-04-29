@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { saveNote } from '../utils/Storage';
+import { saveNote } from '../utils/storage';
 
 function AddNote() {
   const [title, setTitle] = useState('');
